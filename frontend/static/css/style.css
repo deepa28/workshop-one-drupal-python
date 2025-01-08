@@ -1,10 +1,10 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Changed font to 'Roboto' */
     margin: 0;
     padding: 0;
     background: #0a0a23; /* Dark background */
-    color: #ffffff; /* White text */
+    color: #f0f0f0; /* Slightly off-white text */
 }
 
 header {
@@ -12,24 +12,24 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background: #12123b; /* Slightly lighter header */
+    background: #1e1e3f; /* Darker header */
 }
 
 header h1 {
-    font-size: 1.5rem;
-    color: #f9f871;
+    font-size: 1.8rem; /* Slightly larger text */
+    color: #ffdb58; /* Softer yellow for header text */
 }
 
 nav a {
-    color: #ffffff;
+    color: #f0f0f0; /* Light gray text for links */
     text-decoration: none;
     margin: 0 15px;
-    font-size: 1rem;
+    font-size: 1.1rem; /* Slightly larger font size */
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #f9f871;
+    color: #ffdb58; /* Softer yellow hover color */
 }
 
 /* Hero Section */
@@ -38,39 +38,39 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 100px 50px;
-    background: linear-gradient(145deg, #12123b, #28285d);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-    overflow: hidden; /* To handle animations that might overflow */
+    background: linear-gradient(145deg, #1e1e3f, #303050); /* Dark gradient */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
     position: relative;
 }
 
 .hero-content {
     flex: 1;
     color: #ffffff;
-    z-index: 2; /* Keep text above animations */
+    z-index: 2;
 }
 
 .hero-content h2 {
-    font-size: 2.5rem;
-    color: #f9f871;
+    font-size: 3rem; /* Larger heading */
+    color: #ffdb58; /* Softer yellow */
     margin-bottom: 10px;
     animation: fadeInDown 1.2s ease-out;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem; /* Slightly larger paragraph */
     margin-bottom: 20px;
     animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero-content button {
-    background: linear-gradient(145deg, #6a11cb, #2575fc);
+    background: linear-gradient(145deg, #ff4b5c, #ff5f69); /* Gradient for button */
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.1rem; /* Larger font for button */
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: transform 0.3s;
     animation: fadeInUp 1.8s ease-in-out;
 }
@@ -87,7 +87,7 @@ nav a:hover {
 
 .hero-images .animated-image {
     position: absolute;
-    width: 200px;
+    width: 220px;
     height: auto;
     animation: float 4s infinite ease-in-out;
 }
@@ -104,57 +104,16 @@ nav a:hover {
     animation-delay: 1s;
 }
 
-/* Keyframe Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
 /* Work Experience Section */
 #projects {
-    padding: 50px;
-    background: #0e0e30;
+    padding: 60px;
+    background: #1f1f2e; /* Darker background */
 }
 
 #projects h2 {
     text-align: center;
-    font-size: 2rem;
-    color: #f9f871;
+    font-size: 2.5rem; /* Slightly larger title */
+    color: #ffdb58; /* Softer yellow */
     margin-bottom: 30px;
 }
 
@@ -167,7 +126,7 @@ nav a:hover {
 }
 
 .project-card {
-    background: #12123b;
+    background: #1e1e3f; /* Darker card background */
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -181,49 +140,50 @@ nav a:hover {
 }
 
 .project-card img {
-    width: 80%; /* Adjust the size of the images */
+    width: 80%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
 .project-card h3 {
-    font-size: 1.2rem;
-    color: #f9f871;
+    font-size: 1.3rem; /* Slightly larger project title */
+    color: #ffdb58; /* Softer yellow */
     margin-bottom: 10px;
 }
 
 .project-card p {
-    font-size: 1rem;
+    font-size: 1.1rem; /* Slightly larger text */
     margin-bottom: 15px;
-    color: #ffffff;
+    color: #f0f0f0;
 }
 
 .project-card button {
-    background: linear-gradient(145deg, #6a11cb, #2575fc);
+    background: linear-gradient(145deg, #ff4b5c, #ff5f69); /* Gradient for button */
     border: none;
-    padding: 10px 15px;
+    padding: 12px 20px;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.1rem; /* Larger font for button */
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: transform 0.3s;
 }
 
 .project-card button:hover {
     transform: scale(1.1);
 }
+
 /* Contact Section */
 #contact {
-    padding: 50px;
-    background: #0e0e30;
+    padding: 60px;
+    background: #1f1f2e;
     text-align: center;
     color: #ffffff;
 }
 
 #contact h2 {
-    font-size: 2rem;
-    color: #f9f871;
+    font-size: 2.5rem; /* Slightly larger title */
+    color: #ffdb58;
     margin-bottom: 20px;
     animation: fadeInDown 1.2s ease-out;
 }
@@ -231,7 +191,7 @@ nav a:hover {
 form {
     max-width: 600px;
     margin: 0 auto;
-    background: #12123b;
+    background: #1e1e3f;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
@@ -244,20 +204,20 @@ form {
 
 form label {
     display: block;
-    font-size: 1rem;
-    color: #f9f871;
+    font-size: 1.1rem;
+    color: #ffdb58;
     margin-bottom: 8px;
 }
 
 form input,
 form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
-    color: #0e0e30;
-    background: #f9f871;
+    font-size: 1.1rem;
+    color: #1f1f2e;
+    background: #ffdb58; /* Softer yellow background */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -270,18 +230,18 @@ form textarea:focus {
 }
 
 form textarea {
-    height: 100px;
+    height: 120px;
     resize: none;
 }
 
 form button {
-    background: linear-gradient(145deg, #6a11cb, #2575fc);
+    background: linear-gradient(145deg, #ff4b5c, #ff5f69);
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -290,101 +250,27 @@ form button:hover {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-/* Modal styles */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background: #12123b;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
-    text-align: center;
-    animation: fadeInUp 0.5s;
-}
-
-.modal-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.modal-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #f9f871;
-}
-
-.modal-content p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #ffffff;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
+/* Footer Section */
 footer {
-    background: #12123b; /* Slightly lighter dark shade */
-    color: #ffffff; /* White text */
+    background: #1e1e3f;
+    color: #f0f0f0;
     padding: 20px 50px;
     text-align: center;
-    position: relative; /* Makes the footer adaptable */
-    bottom: 0; /* Ensure it's at the bottom */
+    position: relative;
+    bottom: 0;
     width: 100%;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for better definition */
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
 }
 
 footer p {
-    font-size: 1rem;
-    margin: 0 0 10px 0; /* Adjusts spacing */
-    line-height: 1.5; /* Improves readability */
-    color: #f9f871; /* Highlight color for keywords */
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+    color: #ffdb58; /* Softer yellow */
 }
 
 footer p span {
-    color: #6a11cb; /* Distinctive gradient-like text color for emphasis */
+    color: #ff4b5c; /* Highlight color for emphasis */
 }
 
 footer div {
@@ -395,32 +281,17 @@ footer div {
 }
 
 footer a {
-    color: #ffffff; /* White for links */
+    color: #f0f0f0;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: color 0.3s ease-in-out;
 }
 
 footer a:hover {
-    color: #f9f871; /* Highlight on hover */
+    color: #ffdb58;
 }
 
-/* Footer Responsive Adjustments */
-@media (max-width: 768px) {
-    footer {
-        padding: 15px 20px;
-    }
-
-    footer p {
-        font-size: 0.9rem; /* Slightly smaller text for smaller screens */
-    }
-
-    footer div {
-        flex-direction: column; /* Stack icons vertically */
-        gap: 10px;
-    }
-}
-/* Modal styling */
+/* Modal Styling */
 .modal {
     display: none;
     position: fixed;
@@ -434,7 +305,7 @@ footer a:hover {
 }
 
 .modal-content {
-    background-color: #000000;
+    background-color: #1e1e3f;
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -449,7 +320,7 @@ footer a:hover {
 }
 
 .close {
-    color: #1a0808;
+    color: #ff4b5c;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -458,8 +329,7 @@ footer a:hover {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #ffdb58;
     text-decoration: none;
     cursor: pointer;
 }
-
