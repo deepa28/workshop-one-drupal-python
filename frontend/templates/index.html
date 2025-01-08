@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="hero">
+    <div class="hero-content">
+        <h2>Welcome to the Future of AI</h2>
+        <p>Explore cutting-edge Artificial Intelligence solutions designed to revolutionize your business.</p>
+        <button>Get Started</button>
+    </div>
+    <div class="hero-images">
+        <img src="{{ url_for('static', filename='images/AI.jpg') }}" alt="AI Image 1" class="animated-image image1">
+        <img src="{{ url_for('static', filename='images/AI.jpg') }}" alt="AI Image 2" class="animated-image image2">
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Work Experience</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/AI-in-Healthcare.jpg') }}" alt="Project 1">
+            <h3>AI for Healthcare</h3>
+            <p>An AI-powered robot assisting doctors with patient diagnostics in a modern hospital setting.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/AdobeStock_162980569-scaled.jpeg') }}" alt="Project 2">
+            <h3>Autonomous Driving System</h3>
+            <p>An Autonomous Driving System represents a middle-ground AI project, focusing on enabling vehicles to navigate and operate without human intervention.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/unnamed.png') }}" alt="Project 3">
+            <h3>Pneumonia Detection with Python</h3>
+            <p>Many diseases such as cancer, tumours, and pneumonia are detected using computer-aided diagnosis with the help of AI technology.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/unnamed (1).png') }}" alt="Project 4">
+            <h3>Autocorrect Tool </h3>
+            <p>Autocorrect is an application of AI that we use every day. It makes our lives easier by taking care of spelling mistakes and grammatical errors.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+</section>
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle">Project Title</h2>
+        <img id="modalImage" src="" alt="Project Image">
+        <p id="modalDescription">Detailed project description goes here.</p>
+    </div>
+</div>
+
+
+<footer>
+    <p>I'm currently looking to join a <span>cross-functional team</span> that values improving lives through accessible design.</p>
+    <div>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+</footer>
+
+{% endblock %}
