@@ -1,0 +1,465 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a23; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #12123b; /* Slightly lighter header */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #f9f871;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f9f871;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background: linear-gradient(145deg, #12123b, #28285d);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* To handle animations that might overflow */
+    position: relative;
+}
+
+.hero-content {
+    flex: 1;
+    color: #ffffff;
+    z-index: 2; /* Keep text above animations */
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: #f9f871;
+    margin-bottom: 10px;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content button {
+    background: linear-gradient(145deg, #6a11cb, #2575fc);
+    border: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    animation: fadeInUp 1.8s ease-in-out;
+}
+
+.hero-content button:hover {
+    transform: scale(1.1);
+}
+
+.hero-images {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-images .animated-image {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    animation: float 4s infinite ease-in-out;
+}
+
+.hero-images .image1 {
+    top: 20px;
+    left: 50px;
+    animation-delay: 0s;
+}
+
+.hero-images .image2 {
+    bottom: 20px;
+    right: 50px;
+    animation-delay: 1s;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Work Experience Section */
+#projects {
+    padding: 50px;
+    background: #0e0e30;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #f9f871;
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: #12123b;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project-card img {
+    width: 80%; /* Adjust the size of the images */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    color: #f9f871;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.project-card button {
+    background: linear-gradient(145deg, #6a11cb, #2575fc);
+    border: none;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.project-card button:hover {
+    transform: scale(1.1);
+}
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background: #0e0e30;
+    text-align: center;
+    color: #ffffff;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #f9f871;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #12123b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    color: #f9f871;
+    margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #0e0e30;
+    background: #f9f871;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    background: linear-gradient(145deg, #6a11cb, #2575fc);
+    border: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #12123b;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    animation: fadeInUp 0.5s;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.modal-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #f9f871;
+}
+
+.modal-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+footer {
+    background: #12123b; /* Slightly lighter dark shade */
+    color: #ffffff; /* White text */
+    padding: 20px 50px;
+    text-align: center;
+    position: relative; /* Makes the footer adaptable */
+    bottom: 0; /* Ensure it's at the bottom */
+    width: 100%;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for better definition */
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0 0 10px 0; /* Adjusts spacing */
+    line-height: 1.5; /* Improves readability */
+    color: #f9f871; /* Highlight color for keywords */
+}
+
+footer p span {
+    color: #6a11cb; /* Distinctive gradient-like text color for emphasis */
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer a {
+    color: #ffffff; /* White for links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #f9f871; /* Highlight on hover */
+}
+
+/* Footer Responsive Adjustments */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 20px;
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Slightly smaller text for smaller screens */
+    }
+
+    footer div {
+        flex-direction: column; /* Stack icons vertically */
+        gap: 10px;
+    }
+}
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #000000;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #1a0808;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
