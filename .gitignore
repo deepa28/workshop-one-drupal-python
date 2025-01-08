@@ -1,0 +1,96 @@
+######################
+# Taskfile/Drainpipe #
+######################
+drupal/.task
+drupal/.ddev/commands/web/task
+drupal/.env
+
+# Pantheon reserved paths
+drupal/web/sites/default/files
+drupal/sites/default/files
+
+########
+# DDEV #
+########
+drupal/.ddev/config.local.yaml
+
+##########
+# Drupal #
+##########
+drupal/!web/
+drupal/web/*
+
+drupal/!web/libraries
+drupal/web/libraries/intl-tel-input
+
+drupal/!web/modules
+drupal/web/modules/*
+drupal/!web/modules/custom
+
+drupal/!web/themes
+drupal/web/themes/*
+drupal/!web/themes/custom
+
+drupal/!web/sites
+drupal/web/sites/*
+drupal/!web/sites/sites.php
+
+drupal/!web/sites/default
+drupal/web/sites/default/*
+drupal/!web/sites/default/settings.php
+drupal/!web/sites/default/services.yml
+drupal/!web/sites/default/services.*.yml
+drupal/!web/sites/default/settings.*.php
+drupal/!web/sites/default/files
+drupal/!web/sites/default/site-settings
+
+drupal/!web/sites/chrome/
+drupal/web/sites/chrome/*
+drupal/!web/sites/chrome/settings.php
+drupal/!web/sites/chrome/files
+drupal/!web/sites/firefox/
+drupal/web/sites/firefox/*
+drupal/!web/sites/firefox/settings.php
+drupal/!web/sites/firefox/files
+
+drupal/vendor
+
+drupal/.editorconfig
+
+drupal/web/themes/custom/*/style.css
+drupal/web/themes/custom/*/style.css.map
+drupal/web/modules/custom/*/style.css
+drupal/web/modules/custom/*/style.css.map
+
+drupal/web/themes/custom/*/script.min.js
+drupal/web/themes/custom/*/script.min.js.map
+drupal/web/modules/custom/*/script.min.js
+drupal/web/modules/custom/*/script.min.js.map
+
+drupal/.DS_Store
+
+# IDEA IDE
+drupal/.idea
+
+########
+# Yarn #
+########
+drupal/.yarn/*
+drupal/!.yarn/cache
+drupal/!.yarn/patches
+drupal/!.yarn/plugins
+drupal/!.yarn/releases
+drupal/!.yarn/sdks
+drupal/!.yarn/versions
+drupal/yarn-error.log
+drupal/node_modules
+
+#########
+# Tests #
+#########
+drupal/test_result
+drupal/IFrameCommunicator.html
+drupal/.twig-cs-fixer.cache
+
+# Project specific
+
