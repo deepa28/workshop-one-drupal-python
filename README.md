@@ -1,2 +1,2 @@
-# workshop-one-drupal-react
-Workshop #1 Decoupled Drupal / React FE
+# workshop-one-drupal-python
+Workshop #1 Decoupled Drupal / Python FE
